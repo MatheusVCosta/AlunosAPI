@@ -1,4 +1,4 @@
-package br.com.senaijandira.alunos;
+package br.com.senaijandira.alunos.presenter;
 
 import android.util.Log;
 
@@ -6,6 +6,7 @@ import java.util.List;
 
 import br.com.senaijandira.alunos.model.Aluno;
 import br.com.senaijandira.alunos.service.AlunoService;
+import br.com.senaijandira.alunos.view.MainView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -43,7 +44,7 @@ public class MainPresenter {
                 //Lista de alunos retornada pelo servidor
                 List<Aluno> alunos = response.body();
 
-                for (Aluno a : alunos) {
+                for (Aluno a : alunos){
                     Log.d("API_ALUNOS", a.getNome());
                 }
                 //Exibir os alunos na tela

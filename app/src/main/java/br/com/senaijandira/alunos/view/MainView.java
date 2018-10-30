@@ -1,4 +1,4 @@
-package br.com.senaijandira.alunos;
+package br.com.senaijandira.alunos.view;
 
 import java.util.List;
 
